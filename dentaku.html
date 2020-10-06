@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="dentaku.css">
+    <title>電卓</title>
+    <script type="text/javascript" src="dentaku.js"></script>
+</head>
+<body>
+    <form id="myForm">
+    <table>
+        <tr>
+            <th colspan="3"><input type="text" name="myLine" value="0">
+            </th>
+            <th>
+            <input type="button" value="C" onclick="myClear()">
+            </th>
+        </tr>
+        <tr>
+            <td>
+            <input type="button" value="1" onclick="myValue(1)">
+            </td>
+            <td>
+            <input type="button" value="2" onclick="myValue(2)">
+            </td>
+            <td>
+            <input type="button" value="3" onclick="myValue(3)">
+            </td>
+            <td>
+            <input type="button" value="÷" onclick="myCalculate('/')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="button" value="4" onclick="myValue(4)">
+            </td>
+            <td>
+            <input type="button" value="5" onclick="myValue(5)">
+            </td>
+            <td>
+            <input type="button" value="6" onclick="myValue(6)">
+            </td>
+            <td>
+            <input type="button" value="×" onclick="myCalculate('*')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="button" value="7" onclick="myValue(7)">
+            </td>
+            <td>
+            <input type="button" value="8" onclick="myValue(8)">
+            </td>
+            <td>
+            <input type="button" value="9" onclick="myValue(9)">
+            </td>
+            <td>
+            <input type="button" value="-" onclick="myCalculate('-')">
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <input type="button" value="0" onclick="myValue(0)">
+            </td>
+            <td>
+            <input type="button" value="." onclick="myValue('.')">
+            </td>
+            <td>
+            <input type="button" value="=" onclick="myCalculate('=')">
+            </td>
+            <td>
+            <input type="button" value="+" onclick="myCalculate('+')">
+            </td>
+        </tr>
+    </table>
+        </form>
+</body>
+</html>
